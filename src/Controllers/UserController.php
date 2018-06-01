@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controllers;
 
 use App\dao\UserDAO;
 use App\Model\User;
@@ -9,6 +9,17 @@ class UserController
 {
 
     public function index()
+    {
+        echo "Ola";
+    }
+
+    public function getUsers()
+    {
+        $dao = new UserDAO();
+        return $dao->listUser();
+    }
+
+    public function save()
     {
         $user = new User();
         $userDao = new UserDAO();
@@ -22,16 +33,9 @@ class UserController
                 $user->setInstagram($_POST['instagram']);
 
                 $userDao->saveUser($user);
-                print_r($user);
                 return $userDao;
             }
         }
-
-    }
-
-    public function getUsers()
-    {
-        $dao = new UserDAO();
-        return $dao->listUser();
+        return null;
     }
 }
