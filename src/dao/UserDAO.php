@@ -29,8 +29,7 @@ class UserDAO
     public function listUser()
     {
         try{
-            // select u.cpf, u.email as Email, p.description AS Permisão from permissions as p join user as u on p.id = u.permission_id
-            $sql = "SELECT * FROM user";
+            $sql = "SELECT u.cpf, u.email, p.description FROM permissions AS p JOIN user AS u ON p.id = u.permission_id";
             $stmt = BD::getConnection()->prepare($sql);
             $stmt->execute();
 

@@ -1,0 +1,109 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "8d853310b183690cb9586b9b1dc7dd60",
+    "packages": [
+        {
+            "name": "nezamy/route",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nezamy/route.git",
+                "reference": "e030799963245d3db8bfe8661512d1139f6c95ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nezamy/route/zipball/e030799963245d3db8bfe8661512d1139f6c95ca",
+                "reference": "e030799963245d3db8bfe8661512d1139f6c95ca",
+                "shasum": ""
+            },
+            "require": {
+                "nezamy/support": "1.0.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "System\\": "system"
+                },
+                "files": [
+                    "system/function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mahmoud Elnezamy",
+                    "email": "mahmoud@nezamy.com",
+                    "homepage": "http://nezamy.com",
+                    "role": "Full Stack Web Developer"
+                }
+            ],
+            "description": "Route - Fast, flexible routing for PHP, enabling you to quickly and easily build RESTful web applications.",
+            "homepage": "https://nezamy.com/route",
+            "keywords": [
+                "api",
+                "justframework",
+                "restful",
+                "route"
+            ],
+            "time": "2018-06-04T15:42:22+00:00"
+        },
+        {
+            "name": "nezamy/support",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nezamy/support.git",
+                "reference": "8803292708fbfa857bdd056c9b9dc883adc51414"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nezamy/support/zipball/8803292708fbfa857bdd056c9b9dc883adc51414",
+                "reference": "8803292708fbfa857bdd056c9b9dc883adc51414",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "System\\Support\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mahmoud Elnezamy",
+                    "email": "mahmoud@nezamy.com",
+                    "homepage": "http://nezamy.com",
+                    "role": "Full Stack Web Developer"
+                }
+            ],
+            "description": "Support",
+            "homepage": "https://github.com/nezamy/support",
+            "keywords": [
+                "framework",
+                "justframework",
+                "micro",
+                "support"
+            ],
+            "time": "2018-06-04T14:53:46+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

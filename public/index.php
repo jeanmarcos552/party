@@ -1,12 +1,17 @@
 <?php
 
-require __DIR__ . "/../vendor/autoload.php";
+define('DS', DIRECTORY_SEPARATOR, true);
+define('BASE_PATH', __DIR__ . DS, TRUE);
 
-use App\config\Utils;
-use App\Init;
+require BASE_PATH.'/../vendor/autoload.php';
 
-Utils::init();
+$app		= System\App::instance();
+$app->request  	= System\Request::instance();
+$app->route	= System\Route::instance($app->request);
 
-$routes = new Init();
+$route = $app->route;
 
+$route->get('/', 'App\Controllers\UserController@index');
+$route->get('/admin', 'App\Controllers\Admin@index');
 
+$route->end();

@@ -10,7 +10,16 @@ class UserController
 
     public function index()
     {
-        echo "Ola";
+        $userDao = new UserDAO();
+        array_walk($userDao->listUser(), function ($user){ ?>
+           <table border="1px" style="width: 100%;">
+               <tr style="width: 100%;">
+                   <td><?= $user['cpf']?></td>
+                   <td><?= $user['description']?></td>
+                   <td><?= $user['email']?></td>
+               </tr>
+           </table>
+        <?php });
     }
 
     public function getUsers()

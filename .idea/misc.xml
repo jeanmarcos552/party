@@ -8,6 +8,13 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1603769383">
+      <usages-collector id="statistics.php.composer.actions">
+        <counts>
+          <entry key="install_from_ComposerEditorNotificationPanel" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
