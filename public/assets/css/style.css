@@ -1,0 +1,548 @@
+/*Modal @import*/
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:700);
+
+a#next{
+    color: white;
+}
+#signup {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    min-height: 420px;
+}
+#fieldsets {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 440px;
+    max-height: 120%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#fieldsets p {
+  max-width: 95%;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+textarea {
+    margin-bottom: 30px;
+    margin-top: 5px;
+    display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-bottom: 8px;
+  position: relative;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=tel]:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #22918b;
+}
+input[type=radio] {
+  margin: 6px;
+  display: inline-block;
+}
+fieldset {
+    border: none;
+    position: absolute;
+    left: -802px;
+    width: 100%;
+    padding: 10px 0;
+    padding-right: 40px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    opacity: 0;
+}
+fieldset.current {
+  left: 20px;
+  opacity: 1;
+}
+fieldset.next {
+    left: 802px;
+}
+input[type=submit] {
+  display: none;
+  border: none;
+}
+#section-tabs {
+    font-size: 0.8em;
+    height: 20px;
+    position: relative;
+    padding: 0;
+    font-weight: bold;
+    list-style: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+#section-tabs li {
+    color: #a7a7a7;
+    cursor: not-allowed;
+    border-left: 1px solid #aaa;
+    text-decoration: none;
+    padding: 0 6px;
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    background: #ddd;
+    position: relative;
+}
+#section-tabs li span {
+  color: #bababa;
+}
+#section-tabs li.active {
+  color: #444;
+  cursor: pointer;
+}
+#section-tabs li:after {
+  content: "";
+  display: block;
+  margin-left: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#section-tabs li.current {
+  opacity: 1;
+  background: #fff;
+  z-index: 999;
+  border-left: none;
+}
+#section-tabs li.current:after {
+  border: 15px solid transparent;
+  border-left: 15px solid #000;
+}
+.error {
+  color: #bf2424;
+  display: block;
+}
+input.error,
+textarea.error {
+  border-color: #bf2424;
+}
+input.error:focus,
+textarea.error:focus {
+  border-color: #bf2424;
+}
+label.error {
+  margin-bottom: 20px;
+}
+input.valid {
+  color: green;
+}
+label.valid {
+  position: absolute;
+  right: 20px;
+}
+input + .valid,
+textarea + .valid {
+  display: none;
+}
+.valid + .valid {
+  display: inline;
+  position: absolute;
+  right: 10px;
+  margin-top: -36px;
+  color: green;
+}
+.btn {
+  border: none;
+  padding: 8px;
+  background: #000;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.btn:hover {
+    background: #eb8712;
+}
+
+/*End Modal*/
+
+body{
+    background: url(../img/wurum_bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-position:top;
+}
+section{
+    height: 100vh;
+}
+h1{
+    position: absolute;
+    bottom: 4em;
+    z-index: 9;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;}
+h1, 
+h2{
+   letter-spacing: 10px;
+}
+
+.lightbox {
+   background: rgba(0,0,0,0.8);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   text-align: center;
+}
+.lightbox h1 {
+  color: white;
+}
+.button{
+   text-align: center;
+   width: 100%;
+}
+button{
+   display: inline-block;
+   font-weight: 400;
+   text-align: center;
+   white-space: nowrap;
+   vertical-align: middle;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   border: 1px solid transparent;
+   padding: .375rem .75rem;
+   font-size: 1rem;
+   line-height: 1.5;
+   border-radius: .25rem;
+   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+button.lightClick {
+   position: absolute;
+   bottom: 5px;
+   width: 200px;
+   margin-left: -6.9em;
+   border: 1px solid white;
+   padding: 12px;
+   background-color: transparent;
+   color: white;
+}
+.btn-danger {
+   color: #fff;
+   background-color: #dc3545;
+   border-color: #dc3545;
+}
+button:focus{
+   outline: none;
+}
+.cansle {
+   font-size: 26px;
+   position: relative;
+   right: -22px;
+   font-family: sans-serif;
+   margin: -25px auto;
+   text-align: right;
+   cursor: pointer;
+   color: orange;
+}
+.cansle:focus{
+   outline: none;
+}
+.content-modal {
+   max-width:800px;
+   margin: 10px auto;
+   height: 34.33em;
+   padding: 30px;
+   background-color: #fff;
+   border: 1px solid orange;
+   margin: middle;
+   overflow: scroll;
+}
+amp-video {
+    margin-bottom: 2em;
+}
+
+form {
+   text-align: initial;
+   margin-bottom: 1em;
+}
+.col {
+    line-height: 3em;
+}
+.form-control {
+   display: block;
+   width: 90%;
+   padding: .375rem .75rem;
+   font-size: 1rem;
+   line-height: 1.5;
+   color: #495057;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #ced4da;
+   border-radius: .25rem;
+   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control:focus {
+  outline: none !important;
+  border-color: transparent !important; 
+}
+amp-video {
+    width: 100%;
+    height: 34em;
+}
+@media (max-width: 768px){         
+   amp-video {
+      height: 20em;
+   }
+   .content-modal {
+      height: 92vh;
+   }
+}
+
+@media (width: 1024px){
+   .content-modal{
+      height: auto;
+   }
+}
+@media (max-width: 320px){
+   .content-modal{
+      height: 31.33em;
+      margin: inherit;
+   }
+}
+
+
+.sk-folding-cube {
+   margin: 20px auto;
+   width: 40px;
+   height: 40px;
+   position: relative;
+   -webkit-transform: rotateZ(45deg);
+   transform: rotateZ(45deg);
+   left: 47%;
+   position: absolute;
+   top: 50%;
+}
+
+.sk-folding-cube .sk-cube {
+   float: left;
+   width: 50%;
+   height: 50%;
+   position: relative;
+   -webkit-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #000;
+   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+   animation: sk-foldCubeAngle 2.4s infinite linear both;
+   -webkit-transform-origin: 100% 100%;
+   -ms-transform-origin: 100% 100%;
+   transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+   -webkit-transform: scale(1.1) rotateZ(90deg);
+   transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+   -webkit-transform: scale(1.1) rotateZ(180deg);
+   transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+   -webkit-transform: scale(1.1) rotateZ(270deg);
+   transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+   -webkit-animation-delay: 0.3s;
+   animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+   -webkit-animation-delay: 0.6s;
+   animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+   -webkit-animation-delay: 0.9s;
+   animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+   0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+      transform: perspective(140px) rotateX(-180deg);
+      opacity: 0;
+   } 25%, 75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+     } 90%, 100% {
+          -webkit-transform: perspective(140px) rotateY(180deg);
+          transform: perspective(140px) rotateY(180deg);
+          opacity: 0;
+       }
+}
+
+@keyframes sk-foldCubeAngle {
+   0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+      transform: perspective(140px) rotateX(-180deg);
+      opacity: 0;
+   } 25%, 75% {
+        -webkit-transform: perspective(140px) rotateX(0deg);
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+     } 90%, 100% {
+          -webkit-transform: perspective(140px) rotateY(180deg);
+          transform: perspective(140px) rotateY(180deg);
+          opacity: 0;
+       }
+}
+
+
+
+input.contentBoolean__checkbox {
+    -webkit-appearance: none;
+    display: block;
+}
+input:focus {
+     outline: none;
+}
+.contentBoolean {
+    display: block;
+    width: 22%;
+    position: relative;
+    -webkit-appearance: none;
+    margin: 10px;
+
+}
+
+/* Controls images so that all images are the same rough dimensions */
+.imageAspectRatio {
+    width: 100%;
+    line-height: 0;
+    padding-top: 75%;
+    position: relative;
+}
+.imageAspectRatio__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    max-width: 100%;
+}
+input:checked {
+    background: #04040457;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: absolute;
+}
+
+.contentBoolean{
+    text-align: center;
+}
+label{
+    width: 100%;
+
+}
+
+
+@media (max-width: 767px) {
+    li.current {
+        width: 100%;
+        display: block !important;
+    }
+    #section-tabs li{
+        display: none;
+        width: 100%;
+
+    }
+    #signup{
+        min-height: 530px;
+    }
+    #fieldsets {
+        height: 100%;
+
+    }
+    .contentBoolean {
+        width: 35%;
+    }
+    a#next {
+        width: 55% !important;
+    }
+    input.btn {
+        width: 55% !important;
+    }
+}
+
+
+@media (max-width: 320px) {
+    #signup {
+        min-height: 125vh;
+    }
+    .contentBoolean {
+        width: 42%;
+    }
+    a#next {
+        width: 50% !important;
+    }
+    input.btn {
+        width: 50% !important;
+    }
+}
+
+@media (width: 768px) {
+    a#next {
+        width: 70% !important;
+    }
+    input.btn {
+        width: 70% !important;
+    }
+}
+
+a#back {
+    position: absolute;
+    left: 20px;
+    width: 6em;
+    color: black;
+    background: transparent;
+}
+
+.blocked{
+    cursor: not-allowed !important;
+    background: #dddddd;
+}
+a#next {
+    width: 80%;
+}
+input.btn {
+    width: 80%;
+}

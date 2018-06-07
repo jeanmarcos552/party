@@ -4,22 +4,17 @@ namespace App\Controllers;
 
 use App\dao\UserDAO;
 use App\Model\User;
+use App\dao\EventosDAO;
 
 class UserController
 {
 
     public function index()
     {
-        $userDao = new UserDAO();
-        array_walk($userDao->listUser(), function ($user){ ?>
-           <table border="1px" style="width: 100%;">
-               <tr style="width: 100%;">
-                   <td><?= $user['cpf']?></td>
-                   <td><?= $user['description']?></td>
-                   <td><?= $user['email']?></td>
-               </tr>
-           </table>
-        <?php });
+        $event = new EventosDAO();
+        $events = $event->getEvents();
+
+        require_once "../src/views/web/home.php";
     }
 
     public function getUsers()
@@ -30,21 +25,21 @@ class UserController
 
     public function save()
     {
-        $user = new User();
-        $userDao = new UserDAO();
+        if ($_POST['cpf'] != null && strlen($_POST['cpf']) == 14) {
+            $user = new User();
+            $userDao = new UserDAO();
 
-        if ($_SERVER['REQUEST_METHOD'] == 'POST')
-        {
-            if (isset($_POST['salvar'])){
+            $user->setCpf($_POST['cpf']);
+            $user->setParticipacoes($_POST['participacoes']);
+            $user->setInstagram($_POST['instagram']);
 
-                $user->setCpf($_POST['cpf']);
-                $user->setParticipacoes($_POST['participacoes']);
-                $user->setInstagram($_POST['instagram']);
-
-                $userDao->saveUser($user);
-                return $userDao;
-            }
+            $userDao->saveUser($user);
+            $result = "200";
         }
-        return null;
+        else {
+            $result = "403";
+        }
+
+        echo $result;
     }
 }

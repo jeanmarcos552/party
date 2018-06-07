@@ -9,7 +9,7 @@
 namespace App\Controllers;
 
 
-class Admin
+class AdminController
 {
 
     public function index()
