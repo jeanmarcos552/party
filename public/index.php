@@ -1,5 +1,13 @@
 <?php
 
+/* if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off") {
+    $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: ' . $redirect);
+    exit();
+}
+*/
+
 define('DS', DIRECTORY_SEPARATOR, true);
 define('BASE_PATH', __DIR__ . DS, TRUE);
 

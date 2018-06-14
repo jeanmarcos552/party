@@ -16,7 +16,7 @@ class BD
     public static function getConnection()
     {
         try{
-            self::$instance = new \PDO("mysql:host=localhost:3306;dbname=php", "root", "root");
+            self::$instance = new \PDO("mysql:host=localhost:3306;dbname=wrum", "root", "root");
             self::$instance->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 
         }catch (\Exception $e){

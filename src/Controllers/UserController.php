@@ -13,6 +13,7 @@ class UserController
     {
         $event = new EventosDAO();
         $events = $event->getEvents();
+        $url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
         require_once "../src/views/web/home.php";
     }
@@ -32,6 +33,7 @@ class UserController
             $user->setCpf($_POST['cpf']);
             $user->setParticipacoes($_POST['participacoes']);
             $user->setInstagram($_POST['instagram']);
+            $user->setEmail($_POST['email']);
 
             $userDao->saveUser($user);
             $result = "200";

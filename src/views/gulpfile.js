@@ -6,7 +6,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var dist_dir = '../../public/assets/';
 var dev_dir = './src';
 
-
 gulp.task('sass', function () {
     return gulp.src(dev_dir + '/sass/**/*.scss')
         .pipe(sourcemaps.init())
