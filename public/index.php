@@ -7,11 +7,13 @@
     exit();
 }
 */
+require_once __DIR__ ."/../src/config/config.php";
 
 define('DS', DIRECTORY_SEPARATOR, true);
 define('BASE_PATH', __DIR__ . DS, TRUE);
 
 require BASE_PATH.'/../vendor/autoload.php';
+
 
 $app		= System\App::instance();
 $app->request  	= System\Request::instance();
@@ -23,5 +25,8 @@ $route->get('/', 'App\Controllers\UserController@index');
 $route->get('/admin', 'App\Controllers\AdminController@index');
 
 $route->post('/api/v1/save', 'App\Controllers\UserController@save');
+
+
+$route->get('/login', 'App\Controllers\Login@getDataLogin');
 
 $route->end();

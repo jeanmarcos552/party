@@ -4,17 +4,14 @@ namespace App\Controllers;
 
 use App\dao\UserDAO;
 use App\Model\User;
-use App\dao\EventosDAO;
 
 class UserController
 {
 
     public function index()
     {
-        $event = new EventosDAO();
-        $events = $event->getEvents();
+        $login_url = 'https://api.instagram.com/oauth/authorize/?client_id=' . INSTAGRAM_CLIENT_ID . '&redirect_uri=' . urlencode(INSTAGRAM_REDIRECT_URI) . '&response_type=code&scope=basic';
         $url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-
         require_once "../src/views/web/home.php";
     }
 
