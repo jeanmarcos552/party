@@ -38,17 +38,15 @@ $(document).ready(function () {
         return true;
     }
 
-
-
     $("body").on("keyup", "form", function(e){
-      if (e.which == 13){
-        if ($("#next").is(":visible") && $("fieldset.current").find("input, textarea").valid() ){
-          e.preventDefault();
-          $("#back").fadeIn(3000);
-          nextSection();
-          return false;
+        if (e.which == 13){
+            if ($("#next").is(":visible") && $("fieldset.current").find("input, textarea").valid() ){
+                e.preventDefault();
+                $("#back").fadeIn(3000);
+                nextSection();
+                return false;
+            }
         }
-      }
     });
 
     $("#next").on("click", function(e){
@@ -70,7 +68,15 @@ $(document).ready(function () {
         var $this = $(this);
         var $insta = $this.find('input[name=insta]');
         var $cpf = $this.find('input[name=cpf]');
+        var $email = $this.find('input[name=email]');
         var $url = $this.attr("action");
+
+        if ($email.val() !== '') {
+            $($email).css('border', '1px solid green');
+        }
+        else{
+            $($email).css('border', '1px solid red');
+        }
 
         if ($cpf.val() !== '') {
             $($cpf).css('border', '1px solid green');
@@ -87,7 +93,9 @@ $(document).ready(function () {
             $($cpf).css('border', '1px solid red');
         }
 
-        if ($cpf.val() !== '' && validadeCPF($cpf.val()) === true) {
+        console.log($cpf.val(), $email.val())
+
+        if ($cpf.val() !== '' && validadeCPF($cpf.val()) === true && $email.val() !== '') {
             $(".sk-folding-cube").show();
 
             $.ajax({
@@ -96,13 +104,13 @@ $(document).ready(function () {
                 data: {
                     cpf: $cpf.val(),
                     instagram: $insta.val(),
-                    participacoes: JSON.stringify(selected)
+                    email: $email.val(),
                 }
             }).done(function(response) {
-                //$(".sk-folding-cube").hide();
+                $(".sk-folding-cube").hide();
                 console.log(response);
                 if (response === '200'){
-                    // location.href = 'https://www.eventbrite.com.br/e/wurm-tickets-46172290564#/tickets';
+                    location.href = 'https://www.eventbrite.com.br/e/wurm-tickets-46172290564#/tickets';
                 }
                 else{
                     alert("Dados inválidos!");
@@ -126,7 +134,7 @@ $(document).ready(function () {
                 $("#back").fadeOut("slow");
             }
 
-            if ($("fieldset.current").index() == 2){
+            if ($("fieldset.current").index() == 1){
                 $("#next").hide();
                 $("input[type=submit]").show();
             } else {
@@ -137,11 +145,11 @@ $(document).ready(function () {
     }
 
     function nextSection(){
-      var i = $("fieldset.current").index();
-      if (i < 3){
-        $("li").eq(i+1).addClass("active");
-        goToSection(i+1);
-      }
+        var i = $("fieldset.current").index();
+        if (i < 2){
+            $("li").eq(i+1).addClass("active");
+            goToSection(i+1);
+        }
     }
 
     $("#back").on("click", function (e) {
@@ -155,11 +163,19 @@ $(document).ready(function () {
     });
 
     $("li").on("click", function(e){
-      var i = $(this).index();
+        var i = $(this).index();
 
-      if ($(this).hasClass("active")){
-        goToSection(i);
-      }
+        if ($(this).hasClass("active")){
+            goToSection(i);
+        }
     });
 
 });
+// $('#myModal').on('shown.bs.modal', function () {
+//   $('#video video')[0].play();
+// })
+// $('#myModal').on('hidden.bs.modal', function () {
+//   $('#video video')[0].pause();
+// })
+
+// $('#video video').click(function(){this.paused?this.play():this.pause();});

@@ -7,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/app.min.css">
 
-    <title>Wrum</title>
+    <title>WURM</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/icon/apple-icon-72x72.png">
