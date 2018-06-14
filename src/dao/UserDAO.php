@@ -11,14 +11,15 @@ class UserDAO
     public function saveUser(User $user)
     {
         try{
-            $sql = "INSERT INTO user (cpf, instagram, email) values ( ?, ?, ?) ";
+            $sql = "INSERT INTO user (cpf, my_instagram, name, image_url) values ( ?, ?, ?, ?)";
             $stmt = BD::getConnection()->prepare($sql);
             $stmt->bindValue(1, $user->getCpf());
-            $stmt->bindValue(2, $user->getInstagram());
-            $stmt->bindValue(3, $user->getEmail());
+            $stmt->bindValue(2, $user->getMyInstagram());
+            $stmt->bindValue(3, $user->getName());
+            $stmt->bindValue(4, $user->getImage());
             $stmt->execute();
 
-            return "Usuario " . $user->getInstagram() . " cadastrado com sucesso!";
+            return "Usuario " . $user->getName() . " cadastrado com sucesso!";
 
         }catch (\Exception $e){
             print_r($e->getMessage());

@@ -7,7 +7,7 @@
     exit();
 }
 */
-require_once __DIR__ ."/../src/config/config.php";
+require_once __DIR__ . "/../src/utils/config.php";
 
 define('DS', DIRECTORY_SEPARATOR, true);
 define('BASE_PATH', __DIR__ . DS, TRUE);
@@ -26,7 +26,6 @@ $route->get('/admin', 'App\Controllers\AdminController@index');
 
 $route->post('/api/v1/save', 'App\Controllers\UserController@save');
 
-
-$route->get('/login', 'App\Controllers\Login@getDataLogin');
+$route->get('/login', 'App\Controllers\LoginController@index');
 
 $route->end();

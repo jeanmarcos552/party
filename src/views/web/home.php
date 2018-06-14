@@ -2,6 +2,7 @@
 <?php require_once __DIR__ ."/../includes/header.php" ?>
 
 <section>
+    <?php var_dump($user_info); ?>
     <a href="<?= $login_url ?>">Login with Instagram</a>
 
     <button type="button" class="lightClick" data-toggle="modal" data-target=".bd-example-modal-lg">Comprar</button>

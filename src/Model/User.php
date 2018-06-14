@@ -6,14 +6,16 @@ class User
 {
 
     private $cpf;
-    private $participacoes;
-    private $instagram;
+    private $myInstagram;
+    private $indicatedInstagram;
     private $name;
     private $email;
     private $password;
     private $permission;
     private $date_create;
     private $data_modified;
+    private $image;
+
 
     /**
      * @return mixed
@@ -34,33 +36,33 @@ class User
     /**
      * @return mixed
      */
-    public function getParticipacoes()
+    public function getMyInstagram()
     {
-        return $this->participacoes;
+        return $this->myInstagram;
     }
 
     /**
-     * @param mixed $participacoes
+     * @param mixed $myInstagram
      */
-    public function setParticipacoes($participacoes)
+    public function setMyInstagram($myInstagram)
     {
-        $this->participacoes = $participacoes;
+        $this->myInstagram = '@'.$myInstagram;
     }
 
     /**
      * @return mixed
      */
-    public function getInstagram()
+    public function getIndicatedInstagram()
     {
-        return $this->instagram;
+        return $this->indicatedInstagram;
     }
 
     /**
-     * @param mixed $instagram
+     * @param mixed $indicatedInstagram
      */
-    public function setInstagram($instagram)
+    public function setIndicatedInstagram($indicatedInstagram)
     {
-        $this->instagram = $instagram;
+        $this->indicatedInstagram = $indicatedInstagram;
     }
 
     /**
@@ -158,4 +160,21 @@ class User
     {
         $this->data_modified = $data_modified;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * @param mixed $image
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+    }
+
 }
