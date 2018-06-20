@@ -7,6 +7,7 @@
     exit();
 }
 */
+
 require_once __DIR__ . "/../src/utils/config.php";
 
 define('DS', DIRECTORY_SEPARATOR, true);
@@ -22,10 +23,8 @@ $app->route	= System\Route::instance($app->request);
 $route = $app->route;
 
 $route->get('/', 'App\Controllers\UserController@index');
-$route->get('/admin', 'App\Controllers\AdminController@index');
-
+$route->get('/admin', 'App\Controllers\UserController@getUsers');
 $route->post('/api/v1/save', 'App\Controllers\UserController@save');
-
 $route->get('/login', 'App\Controllers\LoginController@index');
 
 $route->end();

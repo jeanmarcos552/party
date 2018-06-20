@@ -19,7 +19,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('javascript', function() {
-    return gulp.src(dev_dir + '/javascript/app.js')
+    return gulp.src(dev_dir + '/javascript/*.js')
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(rename(function (path) {

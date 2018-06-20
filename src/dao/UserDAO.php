@@ -11,12 +11,14 @@ class UserDAO
     public function saveUser(User $user)
     {
         try{
-            $sql = "INSERT INTO user (cpf, my_instagram, name, image_url) values ( ?, ?, ?, ?)";
+            $sql = "INSERT INTO user (cpf, my_instagram, indicated_instagram, email, name, image_url ) values ( ?, ?, ?, ?, ?, ?)";
             $stmt = BD::getConnection()->prepare($sql);
             $stmt->bindValue(1, $user->getCpf());
             $stmt->bindValue(2, $user->getMyInstagram());
-            $stmt->bindValue(3, $user->getName());
-            $stmt->bindValue(4, $user->getImage());
+            $stmt->bindValue(3, $user->getIndicatedInstagram());
+            $stmt->bindValue(4, $user->getEmail());
+            $stmt->bindValue(5, $user->getName());
+            $stmt->bindValue(6, $user->getImageUrl());
             $stmt->execute();
 
             return "Usuario " . $user->getName() . " cadastrado com sucesso!";
@@ -30,7 +32,7 @@ class UserDAO
     public function listUser()
     {
         try{
-            $sql = "SELECT u.cpf, u.email, p.description FROM permissions AS p JOIN user AS u ON p.id = u.permission_id";
+            $sql = "SELECT u.cpf, u.name, u.my_instagram, u.indicated_instagram, u.email, p.description FROM permissions AS p JOIN user AS u ON p.id = u.permission_id";
             $stmt = BD::getConnection()->prepare($sql);
             $stmt->execute();
 

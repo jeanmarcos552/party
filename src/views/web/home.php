@@ -1,9 +1,8 @@
 
-<?php require_once __DIR__ ."/../includes/header.php" ?>
+<?php require_once __DIR__ . "/includes/header.php" ?>
 
 <section>
-    <?php var_dump($user_info); ?>
-    <a href="<?= $login_url ?>">Login with Instagram</a>
+    <a href="<?= $login_url ?>">Login</a>
 
     <button type="button" class="lightClick" data-toggle="modal" data-target=".bd-example-modal-lg">Comprar</button>
 
@@ -20,10 +19,11 @@
                 </div>
 
                 <form id="signup" method="POST" action="<?=$url?>">
-                    <label>
-                        <span>Digite o Instagram do amigo que te indicou a <b>WURM</b></span>
-                        <input type="text" name="insta" id="name5" placeholder="insta do amigo(a)" class="form-control" data-toggle="tooltip" data-placement="top" title="A indicação NÃO pode ser o seu próprio perfil do Instagram.">
-                    </label>
+                    <div class="ui search">
+                        <input class="prompt" name="insta" type="text" placeholder="@instagram do amigo(a)" autocomplete="off">
+                        <div class="results"></div>
+                    </div>
+
 
                     <label>
                         <span>Comprador, digite aqui seu <b>E-mail:</b></span>
@@ -43,4 +43,4 @@
     </div>
 </section>
 
-<?php require_once __DIR__ ."/../includes/footer.php" ?>
+<?php require_once __DIR__ . "/includes/footer.php" ?>

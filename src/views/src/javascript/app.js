@@ -157,4 +157,40 @@ $(document).ready(function () {
             goToSection(i);
         }
     });
+
+   $(".prompt").keyup(function(){
+       var value = $(".prompt").val();
+       var result = [];
+       var divResults = $(".results");
+
+       if (value.length > 2) {
+           $.ajax({
+               url: "https://www.instagram.com/web/search/topsearch/?context=blended",
+               data: {
+                   query: value
+               }
+           }).done(function (data) {
+               divResults.show();
+               data.users.forEach(function (element, index) {
+                   if (index < 6) {
+                       result[index] = '<a class="result"><div class="content"><img src="' + element.user.profile_pic_url + '" alt=""><div class="title">@' + element.user.username + '</div></div></a>';
+                   }
+               });
+
+               divResults.html(result);
+
+               $(".title").on("click", function () {
+                   var text = $(this).text();
+                   $(".prompt").val(text);
+                   divResults.hide();
+               });
+
+           }).fail(function(data) {
+               console.error(data + "error" );
+           })
+       }
+       else{
+           divResults.hide();
+       }
+   });
 });

@@ -18,7 +18,6 @@ class InstagramApi
         $url = 'https://api.instagram.com/oauth/access_token';
 
         $curlPost = 'client_id='. $client_id . '&redirect_uri=' . $redirect_uri . '&client_secret=' . $client_secret . '&code='. $code . '&grant_type=authorization_code';
-
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -37,7 +36,9 @@ class InstagramApi
     }
 
     public function GetUserProfileInfo($access_token) {
+        echo $access_token;
         $url = 'https://api.instagram.com/v1/users/self/?access_token=' . $access_token;
+        // $url = 'https://api.instagram.com/v1/users/search?count=50&q=test&client_id='. $access_token;
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);

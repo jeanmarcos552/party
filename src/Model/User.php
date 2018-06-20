@@ -4,7 +4,6 @@ namespace App\Model;
 
 class User
 {
-
     private $cpf;
     private $myInstagram;
     private $indicatedInstagram;
@@ -14,8 +13,7 @@ class User
     private $permission;
     private $date_create;
     private $data_modified;
-    private $image;
-
+    private $image_url;
 
     /**
      * @return mixed
@@ -164,17 +162,16 @@ class User
     /**
      * @return mixed
      */
-    public function getImage()
+    public function getImageUrl()
     {
-        return $this->image;
+        return $this->image_url;
     }
 
     /**
-     * @param mixed $image
+     * @param mixed $image_url
      */
-    public function setImage($image)
+    public function setImageUrl($image_url)
     {
-        $this->image = $image;
+        $this->image_url = $image_url;
     }
-
 }

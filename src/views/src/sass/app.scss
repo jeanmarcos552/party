@@ -546,3 +546,16 @@ a#next {
 input.btn {
   width: 80%;
 }
+
+.results{
+  height: auto;
+  overflow: scroll;
+}
+.content {
+  display: -webkit-inline-box;
+  line-height: 3;
+  img {
+    width: 45px;
+    margin-right: 14px;
+  }
+}

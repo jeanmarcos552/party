@@ -14,6 +14,9 @@ use App\utils\InstagramApi;
 
 class LoginController
 {
+    /**
+     *
+     */
     public function index()
     {
         if (!isset($_GET['code'])){
@@ -33,14 +36,14 @@ class LoginController
             $user_info = $instagram_ob->GetUserProfileInfo($access_token);
 
             $u->setName($user_info['full_name']);
-            $u->setImage($user_info['profile_picture']);
+            $u->setImageUrl($user_info['profile_picture']);
             $u->setMyInstagram($user_info['username']);
 
             $userDao->saveUser($u);
-
+             echo '<pre>';print_r($user_info); echo '</pre>';
             $_SESSION['logged_in'] = 1;
 
-            header('Location: /');
+            //header('Location: /');
 
         }
         catch(\Exception $e) {

@@ -10,7 +10,7 @@ class UserController
 
     public function index()
     {
-        $login_url = 'https://api.instagram.com/oauth/authorize/?client_id=' . INSTAGRAM_CLIENT_ID . '&redirect_uri=' . urlencode(INSTAGRAM_REDIRECT_URI) . '&response_type=code&scope=public_content';
+        $login_url = 'https://api.instagram.com/oauth/authorize/?client_id=' . INSTAGRAM_CLIENT_ID . '&redirect_uri=' . urlencode(INSTAGRAM_REDIRECT_URI) . '&response_type=code&scope=relationships';
         $url = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         require_once "../src/views/web/home.php";
     }
@@ -18,7 +18,8 @@ class UserController
     public function getUsers()
     {
         $dao = new UserDAO();
-        return $dao->listUser();
+        $users = $dao->listUser();
+        require_once "../src/views/admin/dashboard.php";
     }
 
     public function save()
@@ -28,8 +29,7 @@ class UserController
             $userDao = new UserDAO();
 
             $user->setCpf($_POST['cpf']);
-            $user->setParticipacoes($_POST['participacoes']);
-            $user->setInstagram($_POST['instagram']);
+            $user->setIndicatedInstagram($_POST['instagram']);
             $user->setEmail($_POST['email']);
 
             $userDao->saveUser($user);
