@@ -5,8 +5,14 @@
       <sourceFolder url="file://$MODULE_DIR$/vendor/route" isTestSource="false" packagePrefix="Route\" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="App\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/mashape/unirest-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nezamy/route" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nezamy/support" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpfastcache/phpfastcache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpfastcache/phpssdb" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/predis/predis" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/raiym/instagram-php-scraper" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/route/Init" />
     </content>
     <orderEntry type="inheritedJdk" />

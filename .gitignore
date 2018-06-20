@@ -1,5 +1,5 @@
 composer.phar
-/vendor/composer
+/vendor
 /src/views/node_modules
 /src/views/package-lock.json
 

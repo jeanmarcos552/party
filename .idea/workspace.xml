@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32db532f-ae51-42b3-a9a5-c9ef63ca92a5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Model/Permissions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/dashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/includes/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/admin/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/app.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/2010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/2012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/2014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/2015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/2016.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/_2012.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/_2014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/_2015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img/_wurum_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/AdminController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/EventosDAO.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/InstagramApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/InstagramApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/web/includes/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/web/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/src/javascript/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/src/javascript/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/src/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/src/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/web/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/web/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,11 +17,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
-              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controllers/LoginController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -118,7 +106,6 @@
         <option value="$PROJECT_DIR$/public/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/src/views/src/sass/home.scss" />
         <option value="$PROJECT_DIR$/src/views/includes/header.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/views/package.json" />
         <option value="$PROJECT_DIR$/src/views/includes/footer.php" />
         <option value="$PROJECT_DIR$/src/views/src/javascript/Utils.js" />
@@ -146,6 +133,7 @@
         <option value="$PROJECT_DIR$/src/views/src/javascript/app.js" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -169,6 +157,12 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/nezamy/support" />
       <path value="$PROJECT_DIR$/vendor/nezamy/route" />
+      <path value="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache" />
+      <path value="$PROJECT_DIR$/vendor/phpfastcache/phpssdb" />
+      <path value="$PROJECT_DIR$/vendor/mashape/unirest-php" />
+      <path value="$PROJECT_DIR$/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -194,17 +188,13 @@
             <path>
               <item name="party_com_br" type="b2602c69:ProjectViewProjectNode" />
               <item name="party_com_br" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="party_com_br" type="b2602c69:ProjectViewProjectNode" />
-              <item name="party_com_br" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="party_com_br" type="b2602c69:ProjectViewProjectNode" />
               <item name="party_com_br" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -295,12 +285,12 @@
       <workItem from="1529287036913" duration="60000" />
       <workItem from="1529348578850" duration="596000" />
       <workItem from="1529364411191" duration="26000" />
-      <workItem from="1529497931263" duration="1459000" />
+      <workItem from="1529497931263" duration="1530000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82190000" />
+    <option name="totallyTimeSpent" value="82261000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="733" extended-state="0" />
@@ -440,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/Utils.js" />
     <entry file="file://$PROJECT_DIR$/public/assets/js/app.js" />
     <entry file="file://$PROJECT_DIR$/public/assets/css/app.min.css">
@@ -539,13 +522,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/EventosDAO.php" />
-    <entry file="file://$PROJECT_DIR$/src/Controllers/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="49">
@@ -605,7 +581,21 @@
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
