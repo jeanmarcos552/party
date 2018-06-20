@@ -5,6 +5,7 @@ namespace App\Model;
 class User
 {
     private $cpf;
+    private $id_instagram;
     private $myInstagram;
     private $indicatedInstagram;
     private $name;
@@ -30,6 +31,23 @@ class User
     {
         $this->cpf = $cpf;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getIdInstagram()
+    {
+        return $this->id_instagram;
+    }
+
+    /**
+     * @param mixed $id_instagram
+     */
+    public function setIdInstagram($id_instagram)
+    {
+        $this->id_instagram = $id_instagram;
+    }
+
 
     /**
      * @return mixed
