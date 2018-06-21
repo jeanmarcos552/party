@@ -11,34 +11,34 @@ class UserDAO
     public function saveUser(User $user)
     {
         try{
-            $sql = "INSERT INTO user (cpf, my_instagram, indicated_instagram, email, name, image_url ) values ( ?, ?, ?, ?, ?, ?)";
+            $sql = "INSERT INTO user (id_instagram, id_instagram_hash, my_instagram, name, image_url ) values (?, ?, ?, ?, ?) ";
+
             $stmt = BD::getConnection()->prepare($sql);
-            $stmt->bindValue(1, $user->getCpf());
-            $stmt->bindValue(2, $user->getMyInstagram());
-            $stmt->bindValue(3, $user->getIndicatedInstagram());
-            $stmt->bindValue(4, $user->getEmail());
-            $stmt->bindValue(5, $user->getName());
-            $stmt->bindValue(6, $user->getImageUrl());
+            $stmt->bindValue(1, $user->getIdInstagram());
+            $stmt->bindValue(2, $user->getIdInstagramHash());
+            $stmt->bindValue(3, $user->getMyInstagram());
+            $stmt->bindValue(4, $user->getName());
+            $stmt->bindValue(5, $user->getImageUrl());
             $stmt->execute();
 
-            return "Usuario " . $user->getName() . " cadastrado com sucesso!";
+            return true;
 
         }catch (\Exception $e){
             print_r($e->getMessage());
-            return false;
+            return $e->getCode();
         }
     }
 
     public function listUser()
     {
         try{
-            $sql = "SELECT u.cpf, u.name, u.my_instagram, u.indicated_instagram, u.email, p.description FROM permissions AS p JOIN user AS u ON p.id = u.permission_id";
+            $sql = "SELECT u.*, p.description FROM permissions AS p JOIN user AS u ON p.id = u.permission_id";
             $stmt = BD::getConnection()->prepare($sql);
             $stmt->execute();
 
             $result = $stmt->fetchAll();
-
             return $result;
+
         }catch (\Exception $e){
             echo $e->getMessage();
             return false;
@@ -48,17 +48,32 @@ class UserDAO
     public function updateUser(User $user)
     {
         try {
-            $sql = "UPDATE user SET name=?, email=?, password=?, permission_id=?, date_modified=? WHERE cpf = ?";
+            $sql = "UPDATE user SET cpf=?, indicated_instagram=?, email=?, date_modified=? WHERE id_instagram_hash = ?";
             $stmt = BD::getConnection()->prepare($sql);
-            $stmt->bindValue(1, $user->getName());
-            $stmt->bindValue(2, $user->getEmail());
-            $stmt->bindValue(3, $user->getPassword());
-            $stmt->bindValue(4, $user->getPermission());
-            $stmt->bindValue(5, date("Y/m/d h:i:sa"));
-            $stmt->bindValue(6, $user->getCpf());
+            $stmt->bindValue(1, $user->getCpf());
+            $stmt->bindValue(2, $user->getIndicatedInstagram());
+            $stmt->bindValue(3, $user->getEmail());
+            $stmt->bindValue(4, date("Y-m-d h:i:sa"));
+            $stmt->bindValue(5, $user->getIdInstagramHash());
             $stmt->execute();
 
-            return "Usuário alterado com sucesso!";
+            return true;
+        }catch (\Exception $e){
+            echo $e->getMessage();
+            return false;
+        }
+    }
+
+    public function listUserForId($id)
+    {
+        try{
+            $sql = "SELECT u. FROM permissions AS p JOIN user AS u ON p.id = u.permission_id";
+            $stmt = BD::getConnection()->prepare($sql);
+            $stmt->execute();
+
+            $result = $stmt->fetchAll();
+            return $result;
+
         }catch (\Exception $e){
             echo $e->getMessage();
             return false;

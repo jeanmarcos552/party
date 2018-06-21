@@ -6,6 +6,7 @@ class User
 {
     private $cpf;
     private $id_instagram;
+    private $id_instagram_hash;
     private $myInstagram;
     private $indicatedInstagram;
     private $name;
@@ -55,6 +56,21 @@ class User
     public function getMyInstagram()
     {
         return $this->myInstagram;
+    }
+    /**
+     * @return mixed
+     */
+    public function getIdInstagramHash()
+    {
+        return $this->id_instagram_hash;
+    }
+
+    /**
+     * @param mixed $id_instagram_hash
+     */
+    public function setIdInstagramHash($id_instagram_hash)
+    {
+        $this->id_instagram_hash = $id_instagram_hash;
     }
 
     /**

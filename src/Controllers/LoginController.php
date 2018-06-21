@@ -15,18 +15,17 @@ use InstagramScraper\Model\Location;
 
 class LoginController
 {
-
-
     /**
      *
      */
     public function login()
     {
         if (isset($_GET['code'])){
-
             $u = new User();
+            $userDao = new UserDAO();
             $login = $_GET['code'];
             session_start();
+
             try {
                 $instagram_ob = new InstagramApi();
                 $access_token = $instagram_ob->GetAccessToken(INSTAGRAM_CLIENT_ID, INSTAGRAM_REDIRECT_URI, INSTAGRAM_CLIENT_SECRET, $login);
@@ -34,14 +33,21 @@ class LoginController
 
                 $u->setName($user_info['full_name']);
                 $u->setImageUrl($user_info['profile_picture']);
+                $u->setIdInstagramHash(md5($user_info['id']));
                 $u->setMyInstagram($user_info['username']);
                 $u->setIdInstagram($user_info['id']);
 
-                //$userDao->saveUser($u);
-
-                $_SESSION['logged_in'] = 1;
-
-                return $u;
+                $login = $userDao->saveUser($u);
+                var_dump($login);
+                if ($login || $login == '23000'){
+                    $_SESSION['logged_in'] = 1;
+                    setcookie("user", md5($user_info['id']) , time() + (86400 * 30), "/");
+                }
+                else{
+                    var_dump($login);
+                }
+                header('Location: /');
+                return true;
             }
             catch(\Exception $e) {
                 echo $e->getMessage();
@@ -55,8 +61,8 @@ class LoginController
 
     public function logout()
     {
+        session_start();
         session_destroy();
-
         header("Location: /");
     }
 }

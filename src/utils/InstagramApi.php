@@ -36,9 +36,7 @@ class InstagramApi
     }
 
     public function GetUserProfileInfo($access_token) {
-        echo $access_token;
         $url = 'https://api.instagram.com/v1/users/self/?access_token=' . $access_token;
-        // $url = 'https://api.instagram.com/v1/users/search?count=50&q=test&client_id='. $access_token;
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);

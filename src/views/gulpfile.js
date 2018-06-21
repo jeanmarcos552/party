@@ -10,7 +10,7 @@ const dev_dir = './src';
 
 
 gulp.task('sass', function () {
-    return gulp.src(dev_dir + '/sass/app.scss')
+    return gulp.src(dev_dir + '/sass/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(concat('app.min.css'))
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))

@@ -27,4 +27,6 @@ $route->get('/admin', 'App\Controllers\UserController@getUsers');
 $route->post('/api/v1/save', 'App\Controllers\UserController@save');
 $route->get('/login', 'App\Controllers\LoginController@index');
 
+$route->get('/logout', 'App\Controllers\LoginController@logout');
+
 $route->end();

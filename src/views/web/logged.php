@@ -6,7 +6,7 @@
             <div class="modal-header">
                 <ul id="section-tabs">
                     <!-- <li class="current active"><span>1.</span> Login</li> -->
-                    <li><span>1.</span> Seus dados</li>
+                    <li class="current active"><span>1.</span> Seus dados</li>
                 </ul>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>

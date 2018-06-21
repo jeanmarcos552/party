@@ -38,3 +38,18 @@
     </script> -->
 </head>
 <body>
+<?php
+if ($_SESSION['logged_in']){
+    echo "<pre>";
+
+    echo "</pre>";
+
+    ?>
+    <nav class="deslogin">
+        <ul>
+            <li><img src="" alt=""></li>
+            <li><a href="/logout">Deslogar</a></li>
+        </ul>
+    </nav>
+<?php }
+?>
