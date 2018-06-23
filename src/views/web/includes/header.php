@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/css/semantic.css">
-    <link rel="stylesheet" href="./assets/css/app.min.css">
+    <link rel="stylesheet" type="text/css" href="./public/assets/css/semantic.css">
+    <link rel="stylesheet" href="./public/assets/css/app.min.css">
 
     <title>WURM</title>
     <link rel="apple-touch-icon" sizes="57x57" href="assets/icon/apple-icon-57x57.png">
@@ -39,12 +39,7 @@
 </head>
 <body>
 <?php
-if ($_SESSION['logged_in']){
-    echo "<pre>";
-
-    echo "</pre>";
-
-    ?>
+if ($_SESSION['logged_in']){ ?>
     <nav class="deslogin">
         <ul>
             <li><img src="" alt=""></li>

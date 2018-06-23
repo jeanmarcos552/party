@@ -44,14 +44,7 @@ textarea {
   margin-bottom: 8px;
   position: relative;
 }
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=tel]:focus,
-textarea:focus {
-  outline: none;
-  border: 1px solid #22918b;
-}
+
 input[type=radio] {
   margin: 6px;
   display: inline-block;
@@ -163,9 +156,10 @@ textarea + .valid {
   margin-top: -36px;
   color: green;
 }
-.btn {
+.btn-submit {
+  width: 80%;
   border: none;
-  padding: 8px;
+  padding: 10px;
   background: #000;
   cursor: pointer;
   transition: all 0.3s;
@@ -175,6 +169,7 @@ textarea + .valid {
   position: absolute;
   bottom: 20px;
   font-family: 'Merriweather Sans', sans-serif;
+  border-radius: 5px;
 }
 .btn:hover {
   background: #eb8712;
@@ -564,10 +559,9 @@ input.btn {
   .login{
     a{
       margin-left: -7em;
-      background: #3897f0;
-      border-color: #3897f0;
+      border-color: white;
       color: #fff;
-      padding: 0 12px;
+      padding: 7px 15px;
       -webkit-appearance: none;
       border-radius: 3px;
       border-style: solid;
@@ -575,6 +569,19 @@ input.btn {
       font-size: 14px;
       font-weight: 600;
       line-height: 26px;
+      bottom: 5px;
+      position: absolute;
     }
   }
+}
+
+
+.prompt-others {
+  border-radius: 500rem;
+  padding: 10px;
+}
+
+label{
+  width: 100%;
+  margin: 11px 0;
 }

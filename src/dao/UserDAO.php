@@ -2,7 +2,8 @@
 
 namespace App\dao;
 
-use App\Model\User;
+use App\model\Permissions;
+use App\model\User;
 use App\database\BD;
 
 class UserDAO
@@ -31,13 +32,34 @@ class UserDAO
 
     public function listUser()
     {
+
         try{
             $sql = "SELECT u.*, p.description FROM permissions AS p JOIN user AS u ON p.id = u.permission_id";
             $stmt = BD::getConnection()->prepare($sql);
             $stmt->execute();
 
-            $result = $stmt->fetchAll();
-            return $result;
+            $results = $stmt->fetchAll();
+            $users = array();
+
+            foreach ($results as $result){
+                $userModel = new User();
+                $permission = new Permissions();
+                $permission->setDescription($result['description']);
+
+                $userModel->setCpf($result['cpf']);
+                $userModel->setIdInstagram($result['id_instagram']);
+                $userModel->setMyInstagram($result['my_instagram']);
+                $userModel->setIndicatedInstagram($result['indicated_instagram']);
+                $userModel->setEmail($result['email']);
+                $userModel->setName($result['name']);
+                $userModel->setPermission($permission->getDescription());
+                $userModel->setImageUrl($result['image_url']);
+
+
+                array_push($users,  $userModel);
+            }
+
+            return $users;
 
         }catch (\Exception $e){
             echo $e->getMessage();
@@ -67,7 +89,7 @@ class UserDAO
     public function listUserForId($id)
     {
         try{
-            $sql = "SELECT u. FROM permissions AS p JOIN user AS u ON p.id = u.permission_id";
+            $sql = "SELECT u.* FROM permissions AS p JOIN user AS u ON p.id = u.permission_id";
             $stmt = BD::getConnection()->prepare($sql);
             $stmt->execute();
 

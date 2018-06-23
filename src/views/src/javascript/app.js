@@ -193,4 +193,9 @@ $(document).ready(function () {
            divResults.hide();
        }
    });
+
+    $('#myModal').modal({
+        show: true,
+        keyboard: false
+    });
 });

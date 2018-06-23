@@ -21,19 +21,20 @@
                     </fieldset>-->
 
                     <fieldset class="current">
-                        <div class="ui search">
+                        <label class="ui search">
+                            <span>Comprador, quem te indicou?</span>
                             <input class="prompt" name="insta" type="text" placeholder="@instagram do amigo(a)" autocomplete="off">
                             <div class="results"></div>
-                        </div>
+                        </label>
 
                         <label>
                             <span>Comprador, digite aqui seu <b>E-mail:</b></span>
-                            <input type="email" name="email" placeholder="E-mail do comprador" class="form-control" >
+                            <input type="email" name="email" placeholder="E-mail do comprador" class="prompt-others"  autocomplete="off">
                         </label>
 
                         <label>
                             <span>Comprador, digite aqui seu <b>CPF:</b></span>
-                            <input type="text" name="cpf" placeholder="CPF do comprador" class="form-control" >
+                            <input type="text" name="cpf" placeholder="CPF do comprador" class="prompt-others" autocomplete="off">
                         </label>
                         <div id="results" style="color: red;"></div>
                     </fieldset>
@@ -41,7 +42,7 @@
                     <!-- <a class="btn" id="back"><i class="fas fa-arrow-alt-circle-left"></i> Voltar</a>
                     <a class="btn" id="next">Próximo <i class="fas fa-arrow-alt-circle-right"></i></a> -->
 
-                    <input type="submit" class="btn" value="Enviar">
+                    <input type="submit" class="btn-submit" value="Enviar">
                 </div>
             </form>
         </div>
