@@ -4,6 +4,10 @@ namespace App\controllers;
 
 use App\dao\UserDAO;
 use App\model\User;
+use InstagramScraper\Exception\InstagramException;
+use InstagramScraper\Exception\InstagramNotFoundException;
+use InstagramScraper\Instagram;
+
 
 class UserController
 {
@@ -61,6 +65,19 @@ class UserController
     public function getUserLogged($id)
     {
 
+
+    }
+
+
+    public function search()
+    {
+        $instagram = new Instagram();
+        $accounts = $instagram->searchAccountsByUsername('ajunqueira');
+        $account = $accounts;
+
+        echo '<pre>';
+        print_r($account);
+        echo '</pre>';
 
     }
 }

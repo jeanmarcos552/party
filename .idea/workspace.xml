@@ -2,26 +2,550 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32db532f-ae51-42b3-a9a5-c9ef63ca92a5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/admin/sidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/src/javascript/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/app.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/app.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/admin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/admin.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/app.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/app.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Permissions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Permissions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dao/UserDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/includes/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/admin/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/admin/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/BD.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/BD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/src/javascript/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/src/javascript/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/src/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/src/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/web/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/web/includes/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/web/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/web/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/web/logged.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/web/logged.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/src/Unirest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/src/Unirest/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/src/Unirest/Method.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/src/Unirest/Request.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/src/Unirest/Request/Body.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/src/Unirest/Response.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/tests/Unirest/BodyTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/tests/Unirest/RequestTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/tests/Unirest/ResponseTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/tests/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/mashape/unirest-php/tests/fixtures/upload.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/system/App.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/system/Request.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/system/Route.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/system/function.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/system/startup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/tests/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/tests/app/controller/test2Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/tests/app/controller/testController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/tests/before.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/tests/groups.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/tests/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/route/tests/resource.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/support/Arr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/support/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/support/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/support/Str.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/nezamy/support/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/.codeclimate.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/.github/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/.scrutinizer.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/LICENCE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/ci/install_dependencies.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/ci/run_tests.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/legacy/Psr/Cache/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/legacy/Psr/Cache/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/legacy/Psr/Cache/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/legacy/Psr/Cache/src/CacheException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/legacy/Psr/Cache/src/CacheItemInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/legacy/Psr/Cache/src/CacheItemPoolInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/legacy/Psr/Cache/src/InvalidArgumentException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/stubs/leveldb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/stubs/leveldb/stub.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/bin/stubs/xcache/stub.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/docs/CREDITS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/docs/DRIVERS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/TestingFunctions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/apc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/cookie.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/couchbase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/decrement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/extendedPhpFastCache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/files.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/increment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/legacy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/memcache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/memcached.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/mongodb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/phpinfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/predis.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/redis.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/sqlite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/ssdb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/tagsMethods.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/xcache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/zend_disk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/examples/zend_shm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Cache/DriverBaseTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Cache/ExtendedCacheItemInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Cache/ExtendedCacheItemPoolInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Cache/ItemBaseTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/CacheManager.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Core/ClassNamespaceResolverTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Core/DriverAbstract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Core/ExtendedCacheItemPoolTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Core/MemcacheDriverCollisionDetectorTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Core/PathSeekerTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Core/StandardPsr6StructureTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Apc/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Apc/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Apcu/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Apcu/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Cookie/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Cookie/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Couchbase/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Couchbase/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Devfalse/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Devfalse/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Devnull/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Devnull/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Devtrue/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Devtrue/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Files/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Files/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Leveldb/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Leveldb/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Memcache/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Memcache/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Memcached/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Memcached/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Mongodb/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Mongodb/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Predis/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Predis/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Redis/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Redis/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Sqlite/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Sqlite/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Ssdb/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Ssdb/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Wincache/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Wincache/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Xcache/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Xcache/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Zenddisk/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Zenddisk/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Zendshm/Driver.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Drivers/Zendshm/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Entities/driverStatistic.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Exceptions/phpFastCacheCoreException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Exceptions/phpFastCacheDriverCheckException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Exceptions/phpFastCacheDriverException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Proxy/phpFastCacheAbstractProxy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Util/Directory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/Util/Languages.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/src/phpFastCache/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/AbstractProxy.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/AttachingDetachingMethods.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/Autoload.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/NewCacheInstance.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/Psr6InterfaceImplements.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/ReadWriteOperations.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/SyntaxChecker.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/issues/Github-373.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/issues/Github-392.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/issues/Github-529.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/tests/issues/Github-560.test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache/var/php/conf/phpfastcache.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/SSDB.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/docs/LICENCE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/src/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/src/phpssdb/Core/SSDB.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/src/phpssdb/Core/SSDBException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/src/phpssdb/Core/SSDBTimeoutException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/src/phpssdb/Core/SSDB_Response.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/phpfastcache/phpssdb/src/phpssdb/Core/SimpleSSDB.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/FAQ.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/VERSION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/autoload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/bin/create-command-test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/bin/create-pear" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/bin/create-phar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/bin/create-single-file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/custom_cluster_distributor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/debuggable_connection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/dispatcher_loop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/executing_redis_commands.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/key_prefixing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/lua_scripting_abstraction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/monitor_consumer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/pipelining_commands.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/pubsub_consumer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/redis_collections_iterators.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/replication_complex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/replication_sentinel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/replication_simple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/session_handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/shared.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/examples/transaction_using_cas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/package.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Autoloader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/ClientContextInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/ClientException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/ClientInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Cluster/ClusterStrategy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Cluster/Distributor/DistributorInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Cluster/Distributor/EmptyRingException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Cluster/Distributor/HashRing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Cluster/Distributor/KetamaRing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Cluster/Hash/CRC16.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Cluster/Hash/HashGeneratorInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Cluster/PredisStrategy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Cluster/RedisStrategy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Cluster/StrategyInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Collection/Iterator/CursorBasedIterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Collection/Iterator/HashKey.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Collection/Iterator/Keyspace.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Collection/Iterator/ListKey.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Collection/Iterator/SetKey.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Collection/Iterator/SortedSetKey.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/Command.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/CommandInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ConnectionAuth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ConnectionEcho.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ConnectionPing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ConnectionQuit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ConnectionSelect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/GeospatialGeoAdd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/GeospatialGeoDist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/GeospatialGeoHash.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/GeospatialGeoPos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/GeospatialGeoRadius.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/GeospatialGeoRadiusByMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashDelete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashExists.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashGet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashGetAll.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashGetMultiple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashIncrementBy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashIncrementByFloat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashKeys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashLength.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashScan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashSet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashSetMultiple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashSetPreserve.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashStringLength.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HashValues.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HyperLogLogAdd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HyperLogLogCount.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/HyperLogLogMerge.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyDelete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyDump.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyExists.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyExpire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyExpireAt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyKeys.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyMigrate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyMove.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyPersist.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyPreciseExpire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyPreciseExpireAt.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyPreciseTimeToLive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyRandom.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyRename.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyRenamePreserve.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyRestore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyScan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeySort.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyTimeToLive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/KeyType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListIndex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListInsert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListLength.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListPopFirst.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListPopFirstBlocking.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListPopLast.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListPopLastBlocking.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListPopLastPushHead.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListPopLastPushHeadBlocking.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListPushHead.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListPushHeadX.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListPushTail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListPushTailX.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListRange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListRemove.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListSet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ListTrim.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/PrefixableCommandInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/Processor/KeyPrefixProcessor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/Processor/ProcessorChain.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/Processor/ProcessorInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/PubSubPublish.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/PubSubPubsub.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/PubSubSubscribe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/PubSubSubscribeByPattern.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/PubSubUnsubscribe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/PubSubUnsubscribeByPattern.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/RawCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ScriptCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerBackgroundRewriteAOF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerBackgroundSave.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerClient.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerCommand.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerConfig.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerDatabaseSize.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerEval.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerEvalSHA.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerFlushAll.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerFlushDatabase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerInfoV26x.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerLastSave.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerMonitor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerObject.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerSave.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerScript.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerSentinel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerShutdown.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerSlaveOf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerSlowlog.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ServerTime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetAdd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetCardinality.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetDifference.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetDifferenceStore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetIntersection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetIntersectionStore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetIsMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetMembers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetMove.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetPop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetRandomMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetRemove.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetScan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetUnion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/SetUnionStore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringAppend.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringBitCount.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringBitField.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringBitOp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringBitPos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringDecrement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringDecrementBy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringGet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringGetBit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringGetMultiple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringGetRange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringGetSet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringIncrement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringIncrementBy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringIncrementByFloat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringPreciseSetExpire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringSet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringSetBit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringSetExpire.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringSetMultiple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringSetMultiplePreserve.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringSetPreserve.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringSetRange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringStrlen.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/StringSubstr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/TransactionDiscard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/TransactionExec.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/TransactionMulti.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/TransactionUnwatch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/TransactionWatch.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetAdd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetCardinality.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetCount.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetIncrementBy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetIntersectionStore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetLexCount.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetRange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetRangeByLex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetRangeByScore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetRank.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetRemove.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetRemoveRangeByLex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetRemoveRangeByRank.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetRemoveRangeByScore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetReverseRange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetReverseRangeByLex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetReverseRangeByScore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetReverseRank.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetScan.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetScore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Command/ZSetUnionStore.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/CommunicationException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Configuration/ClusterOption.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Configuration/ConnectionFactoryOption.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Configuration/ExceptionsOption.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Configuration/OptionInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Configuration/Options.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Configuration/OptionsInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Configuration/PrefixOption.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Configuration/ProfileOption.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Configuration/ReplicationOption.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/AbstractConnection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/Aggregate/ClusterInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/Aggregate/MasterSlaveReplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/Aggregate/PredisCluster.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/Aggregate/RedisCluster.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/Aggregate/ReplicationInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/Aggregate/SentinelReplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/AggregateConnectionInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/CompositeConnectionInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/CompositeStreamConnection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/ConnectionException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/ConnectionInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/Factory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/FactoryInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/NodeConnectionInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/Parameters.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/ParametersInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/PhpiredisSocketConnection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/PhpiredisStreamConnection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/StreamConnection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Connection/WebdisConnection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Monitor/Consumer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/NotSupportedException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Pipeline/Atomic.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Pipeline/ConnectionErrorProof.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Pipeline/FireAndForget.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Pipeline/Pipeline.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/PredisException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/Factory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/ProfileInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/RedisProfile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/RedisUnstable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/RedisVersion200.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/RedisVersion220.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/RedisVersion240.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/RedisVersion260.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/RedisVersion280.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/RedisVersion300.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Profile/RedisVersion320.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/ProtocolException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/ProtocolProcessorInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/RequestSerializerInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/ResponseReaderInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/CompositeProtocolProcessor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/Handler/BulkResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/Handler/ErrorResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/Handler/IntegerResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/Handler/MultiBulkResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/Handler/ResponseHandlerInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/Handler/StatusResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/Handler/StreamableMultiBulkResponse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/ProtocolProcessor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/RequestSerializer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Protocol/Text/ResponseReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/PubSub/AbstractConsumer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/PubSub/Consumer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/PubSub/DispatcherLoop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Replication/MissingMasterException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Replication/ReplicationStrategy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Replication/RoleException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Response/Error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Response/ErrorInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Response/Iterator/MultiBulk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Response/Iterator/MultiBulkIterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Response/Iterator/MultiBulkTuple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Response/ResponseInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Response/ServerException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Response/Status.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Session/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Transaction/AbortedMultiExecException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Transaction/MultiExec.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/predis/predis/src/Transaction/MultiExecState.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/cache/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/cache/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/cache/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/cache/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/cache/src/CacheException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/cache/src/CacheItemInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/cache/src/CacheItemPoolInterface.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/psr/cache/src/InvalidArgumentException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/CHANGELOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/convertShortcode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getAccountById.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getAccountByUsername.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getAccountFollowers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getAccountFollowings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getAccountMediasByUsername.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getCurrentTopMediasByLocationId.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getCurrentTopMediasByTagName.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getLocationById.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getMediaByCode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getMediaById.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getMediaByUrl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getMediaComments.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getMediasByLocationId.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getMediasByTag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getPaginateMediasByTag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getPaginateMediasByUsername.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getSidecarMediaByUrl.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/getStories.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/paginateAccountMediaByUsername.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/examples/searchAccountsByUsername.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Endpoints.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Exception/InstagramAuthException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Exception/InstagramException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Exception/InstagramNotFoundException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Instagram.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/InstagramQueryId.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Model/AbstractModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Model/Account.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Model/CarouselMedia.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Model/Comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Model/Like.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Model/Location.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Model/Media.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Model/Story.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Model/Tag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Model/UserStories.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Traits/ArrayLikeTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Traits/InitializerTrait.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/tests/InstagramTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/route/Init/Bootstrap.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,25 +563,90 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="1258">
+              <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Instagram.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Instagram.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
               <folding>
-                <element signature="e#35#55#0#PHP" expanded="true" />
+                <element signature="e#2756#4156#0#PHP" />
+                <element signature="e#4248#4663#0#PHP" />
+                <element signature="e#4784#4912#0#PHP" />
+                <element signature="e#4962#5784#0#PHP" />
+                <element signature="e#5844#5921#0#PHP" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAO.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Endpoints.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Endpoints.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="89" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAO.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/UserDAO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state relative-caret-position="1360">
+              <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
               <folding>
-                <element signature="e#27#53#0#PHP" expanded="true" />
-                <element signature="e#117#820#0#PHP" />
-                <element signature="e#826#2069#0#PHP" />
+                <element signature="e#25#51#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/admin/sidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/src/javascript/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2483">
+              <caret line="180" column="31" selection-start-line="180" selection-start-column="31" selection-end-line="180" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/src/sass/header.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="9" selection-start-column="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/src/sass/app.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9299">
+              <caret line="547" column="20" selection-start-line="547" selection-start-column="20" selection-end-line="547" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="28" column="61" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -75,10 +664,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>console.log</find>
-      <find>showResults</find>
-      <find>showResults: function(callback) {</find>
-      <find>checkIfLoggedIn</find>
       <find>getUsers</find>
       <find>input</find>
       <find>submit</find>
@@ -105,6 +690,10 @@
       <find>Next</find>
       <find>Previous</find>
       <find>Search</find>
+      <find>6</find>
+      <find>resul</find>
+      <find>inpu</find>
+      <find>user</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/vendor/route</dir>
@@ -135,10 +724,8 @@
         <option value="$PROJECT_DIR$/src/Model/Permissoes.php" />
         <option value="$PROJECT_DIR$/src/Model/Permissions.php" />
         <option value="$PROJECT_DIR$/src/views/src/javascript/semantic.js" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/views/web/not-logged-in.php" />
-        <option value="$PROJECT_DIR$/src/database/BD.php" />
         <option value="$PROJECT_DIR$/src/utils/config.php" />
         <option value="$PROJECT_DIR$/sql" />
         <option value="$PROJECT_DIR$/src/utils/InstagramApi.php" />
@@ -147,13 +734,9 @@
         <option value="$PROJECT_DIR$/src/views/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/views/src/sass/header.scss" />
         <option value="$PROJECT_DIR$/src/Controllers/LoginController.php" />
-        <option value="$PROJECT_DIR$/src/views/src/javascript/app.js" />
         <option value="$PROJECT_DIR$/src/views/web/logged.php" />
-        <option value="$PROJECT_DIR$/src/views/src/sass/app.scss" />
-        <option value="$PROJECT_DIR$/src/dao/UserDAO.php" />
         <option value="$PROJECT_DIR$/src/Model/User.php" />
         <option value="$PROJECT_DIR$/public/.htaccess" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/src/views/web/includes/footer.php" />
         <option value="$PROJECT_DIR$/src/views/web/includes/header.php" />
         <option value="$PROJECT_DIR$/src/Controllers/UserController.php" />
@@ -166,7 +749,13 @@
         <option value="$PROJECT_DIR$/src/views/src/javascript/admin.js" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/src/controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/database/BD.php" />
+        <option value="$PROJECT_DIR$/src/dao/UserDAO.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/src/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/src/views/src/sass/app.scss" />
+        <option value="$PROJECT_DIR$/src/views/src/javascript/app.js" />
       </list>
     </option>
   </component>
@@ -186,22 +775,22 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="$PROJECT_DIR$/vendor/route/Init" />
-      <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/nezamy/support" />
       <path value="$PROJECT_DIR$/vendor/nezamy/route" />
+      <path value="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/phpfastcache/phpfastcache" />
       <path value="$PROJECT_DIR$/vendor/phpfastcache/phpssdb" />
       <path value="$PROJECT_DIR$/vendor/mashape/unirest-php" />
       <path value="$PROJECT_DIR$/vendor/predis/predis" />
-      <path value="$PROJECT_DIR$/vendor/raiym/instagram-php-scraper" />
-      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/nezamy/support" />
+      <path value="$PROJECT_DIR$/vendor/catfan/medoo" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="733" />
+    <option name="height" value="732" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -221,25 +810,20 @@
             <path>
               <item name="party_com_br" type="b2602c69:ProjectViewProjectNode" />
               <item name="party_com_br" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="party_com_br" type="b2602c69:ProjectViewProjectNode" />
               <item name="party_com_br" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="party_com_br" type="b2602c69:ProjectViewProjectNode" />
               <item name="party_com_br" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="party_com_br" type="b2602c69:ProjectViewProjectNode" />
-              <item name="party_com_br" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -341,28 +925,31 @@
       <workItem from="1529694989937" duration="1813000" />
       <workItem from="1529699313111" duration="1113000" />
       <workItem from="1529764323996" duration="9290000" />
-      <workItem from="1529796582921" duration="638000" />
+      <workItem from="1529796582921" duration="4466000" />
+      <workItem from="1529802418343" duration="3575000" />
+      <workItem from="1529930832098" duration="1113000" />
+      <workItem from="1530735095302" duration="520000" />
+      <workItem from="1530739229954" duration="2260000" />
+      <workItem from="1530931208156" duration="65000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118804000" />
+    <option name="totallyTimeSpent" value="130165000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="733" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="732" extended-state="0" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18515626" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32928678" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.26415095" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22913505" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18515626" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32776934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.22644377" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -371,24 +958,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32776934" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30371568" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32861635" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.19654088" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -406,20 +994,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/views/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="3812" lean-forward="true" selection-start-line="3812" selection-end-line="3812" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/Utils.js" />
     <entry file="file://$PROJECT_DIR$/public/assets/js/app.js" />
-    <entry file="file://$PROJECT_DIR$/public/assets/css/app.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1396" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/src/javascript/Utils.js" />
     <entry file="file://$PROJECT_DIR$/public/assets/js/jquery.mask.min.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -432,13 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -456,27 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Endpoints.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-792">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Instagram.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="189" column="9" lean-forward="true" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/BD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/InstagramApi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -484,24 +1031,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/src/sass/header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/src/javascript/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="184" column="21" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -516,13 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/src/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2435">
-          <caret line="571" column="15" selection-start-line="571" selection-start-column="15" selection-end-line="571" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -569,13 +1095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -597,13 +1116,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/app.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret column="2566" selection-start-column="2561" selection-end-column="2566" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/vendor/datatables/js/dataTables.bootstrap.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -617,9 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="522" column="16" selection-start-line="522" selection-start-column="16" selection-end-line="522" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -627,9 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,13 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/admin/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="46" column="75" selection-start-line="46" selection-start-column="75" selection-end-line="46" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -686,31 +1185,111 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="e#122#142#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controllers/UserController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/catfan/medoo/src/Medoo.php" />
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#35#55#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/BD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/admin/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/app.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret column="2132" selection-start-column="2131" selection-end-column="2132" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/UserDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        <state relative-caret-position="1360">
+          <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
           <folding>
-            <element signature="e#27#53#0#PHP" expanded="true" />
-            <element signature="e#117#820#0#PHP" />
-            <element signature="e#826#2069#0#PHP" />
+            <element signature="e#25#51#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="302" column="16" selection-start-line="302" selection-start-column="16" selection-end-line="302" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Endpoints.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="89" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/raiym/instagram-php-scraper/src/InstagramScraper/Instagram.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="e#2756#4156#0#PHP" />
+            <element signature="e#4248#4663#0#PHP" />
+            <element signature="e#4784#4912#0#PHP" />
+            <element signature="e#4962#5784#0#PHP" />
+            <element signature="e#5844#5921#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/src/sass/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/app.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/src/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9299">
+          <caret line="547" column="20" selection-start-line="547" selection-start-column="20" selection-end-line="547" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/src/javascript/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2483">
+          <caret line="180" column="31" selection-start-line="180" selection-start-column="31" selection-end-line="180" selection-end-column="31" />
         </state>
       </provider>
     </entry>

@@ -7,6 +7,7 @@
   },
   "require": {
     "nezamy/route": "^1.2",
-    "raiym/instagram-php-scraper": "^0.8.22"
+    "raiym/instagram-php-scraper": "^0.8.22",
+    "catfan/medoo": "^1.5"
   }
 }

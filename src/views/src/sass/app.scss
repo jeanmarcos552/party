@@ -32,6 +32,7 @@ input[type=email],
 input[type=password],
 input[type=tel],
 textarea {
+  text-transform:lowercase;
   margin-bottom: 30px;
   margin-top: 5px;
   display: block;
@@ -543,7 +544,8 @@ input.btn {
 
 .results{
   height: auto;
-  overflow: scroll;
+  overflow: auto;
+  max-height: 400px;
 }
 .content {
   display: -webkit-inline-box;

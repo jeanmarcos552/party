@@ -172,11 +172,8 @@ $(document).ready(function () {
            }).done(function (data) {
                divResults.show();
                data.users.forEach(function (element, index) {
-                   if (index < 6) {
-                       result[index] = '<a class="result"><div class="content"><img src="' + element.user.profile_pic_url + '" alt=""><div class="title">@' + element.user.username + '</div></div></a>';
-                   }
+                   result[index] = '<a class="result"><div class="content"><img src="' + element.user.profile_pic_url + '" alt=""><div class="title">@' + element.user.username + '</div></div></a>';
                });
-
                divResults.html(result);
 
                $(".title").on("click", function () {
